@@ -112,9 +112,9 @@ export const dummyShowsData = [
         "title": "Lilo & Stitch",
         "overview": "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
         // "poster_path": "https://image.tmdb.org/t/p/original/mKKqV23MQ0uakJS8OCE2TfV5jNS.jpg",
-        "poster_path": tereishq,
+        "poster_path": tereishqme,
         // "backdrop_path": "https://image.tmdb.org/t/p/original/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg",
-        "backdrop_path": tereishq,
+        "backdrop_path": tereishqme,
         "genres": [
             { "id": 10751, "name": "Romance" },
             { "id": 35, "name": "Action" },
