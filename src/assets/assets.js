@@ -4,6 +4,10 @@ import googlePlay from './googlePlay.svg'
 import appStore from './appStore.svg'
 import screenImage from './screenImage.svg'
 import profile from './profile.png'
+import f1 from './f1.jpg';
+import zootopia from './zootopia.jpg';
+import tereishqme from './tereishqme.jpg';
+import dhurander from './dhurander.jpg';
 
 export const assets = {
     logo,
@@ -11,7 +15,11 @@ export const assets = {
     googlePlay,
     appStore,
     screenImage,
-    profile
+    profile,
+    f1,
+    zootopia,
+    tereishqme,
+    dhurander
 }
 
 export const dummyTrailers = [
@@ -58,10 +66,12 @@ export const dummyShowsData = [
     {
         "_id": "324544",
         "id": 324544,
-        "title": "In the Lost Lands",
-        "overview": "A queen sends the powerful and feared sorceress Gray Alys to the ghostly wilderness of the Lost Lands in search of a magical power, where she and her guide, the drifter Boyce, must outwit and outfight both man and demon.",
-        "poster_path": "https://image.tmdb.org/t/p/original/dDlfjR7gllmr8HTeN6rfrYhTdwX.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
+        "title": "F1 THE MOVIE",
+        "overview": "A gifted racer makes a powerful comeback after a life-changing accident, determined to reclaim his place in the F1 world."      ,          
+        // "poster_path": "https://image.tmdb.org/t/p/original/dDlfjR7gllmr8HTeN6rfrYhTdwX.jpg",
+        "poster_path": f1,
+        "backdrop_path": f1,
+        // "backdrop_path": "https://image.tmdb.org/t/p/original/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
         "genres": [
             { "id": 28, "name": "Action" },
             { "id": 14, "name": "Fantasy" },
@@ -71,47 +81,51 @@ export const dummyShowsData = [
         "release_date": "2025-02-27",
         "original_language": "en",
         "tagline": "She seeks the power to free her people.",
-        "vote_average": 6.4,
-        "vote_count": 15000,
-        "runtime": 102,
+        "vote_average": 9.5,
+        "vote_count": 1500,
+        "runtime": 140,
     },
     {
         "_id": "1232546",
         "id": 1232546,
-        "title": "Until Dawn",
-        "overview": "One year after her sister Melanie mysteriously disappeared, Clover and her friends head into the remote valley where she vanished in search of answers. Exploring an abandoned visitor center, they find themselves stalked by a masked killer and horrifically murdered one by one...only to wake up and find themselves back at the beginning of the same evening.",
-        "poster_path": "https://image.tmdb.org/t/p/original/juA4IWO52Fecx8lhAsxmDgy3M3.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/icFWIk1KfkWLZnugZAJEDauNZ94.jpg",
+        "title": "ZOOTOPIA 2",
+        "overview": "In a city where animals of every kind live together, rookie cop Judy Hopps teams up with a sly fox, Nick Wilde, to solve a mysterious case.",
+        // "poster_path": "https://image.tmdb.org/t/p/original/juA4IWO52Fecx8lhAsxmDgy3M3.jpg",
+        "poster_path": zootopia,
+        // "backdrop_path": "https://image.tmdb.org/t/p/original/icFWIk1KfkWLZnugZAJEDauNZ94.jpg",
+        "backdrop_path": zootopia,
         "genres": [
-            { "id": 27, "name": "Horror" },
-            { "id": 9648, "name": "Mystery" }
+            { "id": 27, "name": "Animated" },
+            { "id": 9648, "name": "Drama" }
         ],
         "casts": dummyCastsData,
         "release_date": "2025-04-23",
         "original_language": "en",
         "tagline": "Every night a different nightmare.",
-        "vote_average": 6.405,
-        "vote_count": 18000,
-        "runtime": 103,
+        "vote_average": 9.4,
+        "vote_count": 1800,
+        "runtime": 120,
     },
     {
         "_id": "552524",
         "id": 552524,
         "title": "Lilo & Stitch",
         "overview": "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
-        "poster_path": "https://image.tmdb.org/t/p/original/mKKqV23MQ0uakJS8OCE2TfV5jNS.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg",
+        // "poster_path": "https://image.tmdb.org/t/p/original/mKKqV23MQ0uakJS8OCE2TfV5jNS.jpg",
+        "poster_path": tereishq,
+        // "backdrop_path": "https://image.tmdb.org/t/p/original/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg",
+        "backdrop_path": tereishq,
         "genres": [
-            { "id": 10751, "name": "Family" },
-            { "id": 35, "name": "Comedy" },
-            { "id": 878, "name": "Science Fiction" }
+            { "id": 10751, "name": "Romance" },
+            { "id": 35, "name": "Action" },
+            { "id": 878, "name": "Drama" }
         ],
         "casts": dummyCastsData,
         "release_date": "2025-05-17",
         "original_language": "en",
         "tagline": "Hold on to your coconuts.",
         "vote_average": 7.117,
-        "vote_count": 27500,
+        "vote_count": 2750,
         "runtime": 108,
     },
     {
@@ -119,19 +133,21 @@ export const dummyShowsData = [
         "id": 668489,
         "title": "Havoc",
         "overview": "When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city's criminal underworld to save a politician's son.",
-        "poster_path": "https://image.tmdb.org/t/p/original/ubP2OsF3GlfqYPvXyLw9d78djGX.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/65MVgDa6YjSdqzh7YOA04mYkioo.jpg",
+        // "poster_path": "https://image.tmdb.org/t/p/original/ubP2OsF3GlfqYPvXyLw9d78djGX.jpg",
+        "poster_path": dhurander,
+        // "backdrop_path": "https://image.tmdb.org/t/p/original/65MVgDa6YjSdqzh7YOA04mYkioo.jpg",
+        "backdrop_path": dhurander,
         "genres": [
             { "id": 28, "name": "Action" },
             { "id": 80, "name": "Crime" },
-            { "id": 53, "name": "Thriller" }
+            { "id": 53, "name": "Spy-Thriller" }
         ],
         "casts": dummyCastsData,
         "release_date": "2025-04-25",
         "original_language": "en",
         "tagline": "No law. Only disorder.",
         "vote_average": 6.537,
-        "vote_count": 35960,
+        "vote_count": 3590,
         "runtime": 107,
     },
     {
@@ -152,7 +168,7 @@ export const dummyShowsData = [
         "original_language": "en",
         "tagline": "Be there and be square.",
         "vote_average": 6.516,
-        "vote_count": 15225,
+        "vote_count": 1522,
         "runtime": 101,
     },
     {
@@ -172,7 +188,7 @@ export const dummyShowsData = [
         "original_language": "en",
         "tagline": "Our lives are the sum of our choices.",
         "vote_average": 7.042,
-        "vote_count": 19885,
+        "vote_count": 1985,
         "runtime": 170,
     },
     {
@@ -192,7 +208,7 @@ export const dummyShowsData = [
         "original_language": "en",
         "tagline": "Everyone deserves a second shot.",
         "vote_average": 7.443,
-        "vote_count": 23569,
+        "vote_count": 2359,
         "runtime": 127,
     }
 ]
