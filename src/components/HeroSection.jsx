@@ -3,17 +3,17 @@ import { CalendarIcon } from '@heroicons/react/24/outline'
 import { assets } from "../assets/assets";
 import { ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-
+import newBackground from '../assets/newbackgroundImage.png'
 
 
 
 const HeroSection = () => {
     const navigate=useNavigate()
     return (
-        // <div className='flex flex-col items-start justify-center gap-4 px-6 md:px-16 lg:px-36 bg-[url("/backgroundImage.png")] bg-cover bg-center h-screen'>
-        <div className='flex flex-col items-start justify-center gap-4 px-6 md:px-16 lg:px-36 bg-[url("/backgroundImage.png")] bg-cover bg-center min-h-screen'>
-
-
+         <div className='flex flex-col items-start justify-center gap-4 px-6 md:px-16 lg:px-36 bg-[url("/backgroundImage.png")] bg-cover bg-center h-screen'>
+     
+      
+    
             <img src={assets.marvelLogo} className='max-h-11 lg:h-11 mt-20 ' alt="" />
             <h1 className='text-4xl md:text-[70px] md:leading-18 font-semibold max-w-120' >Guardian <br />of The Galaxy</h1>
             <div className='flex items-center gap-4 text-gray-300'>
@@ -25,11 +25,11 @@ const HeroSection = () => {
                     <CalendarIcon className='w-5 h-5' />2h 8m
                 </div>
             </div>
-            <p className='max-w-md text-gray-300'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae porro, possimus sunt quidem blanditiis veritatis atque quis voluptates provident accusantium?</p>
-            <button onClick={()=>navigate('/movies')} className='flex items-center gap-1 px-6 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-full font-medium cursor-pointer'>Explore Movies
+            <p className='max-w-md text-gray-300'>Guardians of the Galaxy follows a group of misfit heroes—Star-Lord, Gamora, Drax, Rocket, and Groot—who band together to protect the galaxy from powerful cosmic threats. What begins as a clash of personalities turns into an unlikely family fighting to stop villains who endanger the universe.</p>
+            <button onClick={()=>navigate('/movies')} className='flex items-center gap-1 px-6 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-full font-medium cursor-pointer '>Explore Movies
                 
                 <ArrowRight className='w-5 h-5'/>
-            </button>
+            </button> 
         </div>
     )
 }

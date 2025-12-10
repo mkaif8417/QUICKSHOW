@@ -5,9 +5,13 @@ import appStore from './appStore.svg'
 import screenImage from './screenImage.svg'
 import profile from './profile.png'
 import f1 from './f1.jpg';
-import zootopia from './zootopia.jpg';
+import zootopia2 from './zootopia2.jpg';
 import tereishqme from './tereishqme.jpg';
-import dhurander from './dhurander.jpg';
+import dhurandhar from './dhurandhar.jpg';
+import andhraking from './andhraking.jpg';
+import missionimpossible from './mission-impossible.jpg';
+import thunderbolts from './thunderbolts.jpg';
+import therajasaab from './the-raja-saab.jpg';
 
 export const assets = {
     logo,
@@ -17,9 +21,13 @@ export const assets = {
     screenImage,
     profile,
     f1,
-    zootopia,
+    zootopia2,
     tereishqme,
-    dhurander
+    dhurandhar,
+    andhraking,
+    missionimpossible,
+    thunderbolts,
+    therajasaab
 }
 
 export const dummyTrailers = [
@@ -66,7 +74,7 @@ export const dummyShowsData = [
     {
         "_id": "324544",
         "id": 324544,
-        "title": "F1 THE MOVIE",
+        "title": "F1 The Movie",
         "overview": "A gifted racer makes a powerful comeback after a life-changing accident, determined to reclaim his place in the F1 world."      ,          
         // "poster_path": "https://image.tmdb.org/t/p/original/dDlfjR7gllmr8HTeN6rfrYhTdwX.jpg",
         "poster_path": f1,
@@ -88,12 +96,12 @@ export const dummyShowsData = [
     {
         "_id": "1232546",
         "id": 1232546,
-        "title": "ZOOTOPIA 2",
+        "title": "Zootopia 2",
         "overview": "In a city where animals of every kind live together, rookie cop Judy Hopps teams up with a sly fox, Nick Wilde, to solve a mysterious case.",
         // "poster_path": "https://image.tmdb.org/t/p/original/juA4IWO52Fecx8lhAsxmDgy3M3.jpg",
-        "poster_path": zootopia,
+        "poster_path": zootopia2,
         // "backdrop_path": "https://image.tmdb.org/t/p/original/icFWIk1KfkWLZnugZAJEDauNZ94.jpg",
-        "backdrop_path": zootopia,
+        "backdrop_path": zootopia2,
         "genres": [
             { "id": 27, "name": "Animated" },
             { "id": 9648, "name": "Drama" }
@@ -109,8 +117,8 @@ export const dummyShowsData = [
     {
         "_id": "552524",
         "id": 552524,
-        "title": "Lilo & Stitch",
-        "overview": "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
+        "title": "Tere Ishq Mein",
+        "overview": "Tere Ishq Mein is a romantic drama about two lovers whose deep connection is tested by fate and difficult circumstances. Their journey explores how far love can go when challenged by destiny.",
         // "poster_path": "https://image.tmdb.org/t/p/original/mKKqV23MQ0uakJS8OCE2TfV5jNS.jpg",
         "poster_path": tereishqme,
         // "backdrop_path": "https://image.tmdb.org/t/p/original/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg",
@@ -131,12 +139,12 @@ export const dummyShowsData = [
     {
         "_id": "668489",
         "id": 668489,
-        "title": "Havoc",
-        "overview": "When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city's criminal underworld to save a politician's son.",
+        "title": "Dhurandar",
+        "overview": "Durander is an action-packed story of a fearless warrior who rises against injustice with unwavering courage. The film follows his bold journey as he battles powerful enemies to protect his people.",
         // "poster_path": "https://image.tmdb.org/t/p/original/ubP2OsF3GlfqYPvXyLw9d78djGX.jpg",
-        "poster_path": dhurander,
+        "poster_path": dhurandhar,
         // "backdrop_path": "https://image.tmdb.org/t/p/original/65MVgDa6YjSdqzh7YOA04mYkioo.jpg",
-        "backdrop_path": dhurander,
+        "backdrop_path": dhurandhar,
         "genres": [
             { "id": 28, "name": "Action" },
             { "id": 80, "name": "Crime" },
@@ -153,14 +161,16 @@ export const dummyShowsData = [
     {
         "_id": "950387",
         "id": 950387,
-        "title": "A Minecraft Movie",
-        "overview": "Four misfits find themselves struggling with ordinary problems when they are suddenly pulled through a mysterious portal into the Overworld: a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a magical quest with an unexpected, expert crafter, Steve.",
-        "poster_path": "https://image.tmdb.org/t/p/original/yFHHfHcUgGAxziP1C3lLt0q2T4s.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
+        "title": "Andhra King",
+        "overview": "Andhra King is a gripping tale of power, betrayal, and redemption set against the backdrop of political turmoil. The story follows a charismatic leader's rise to power and the challenges he faces from rivals and allies alike.",
+        // "poster_path": "https://image.tmdb.org/t/p/original/yFHHfHcUgGAxziP1C3lLt0q2T4s.jpg",
+        "poster_path": andhraking,
+        // "backdrop_path": "https://image.tmdb.org/t/p/original/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
+        "backdrop_path": andhraking,
         "genres": [
-            { "id": 10751, "name": "Family" },
-            { "id": 35, "name": "Comedy" },
-            { "id": 12, "name": "Adventure" },
+            { "id": 10751, "name": "Action" },
+            { "id": 35, "name": "Drama" },
+            { "id": 12, "name": "Thriller" },
             { "id": 14, "name": "Fantasy" }
         ],
         "casts": dummyCastsData,
@@ -176,8 +186,10 @@ export const dummyShowsData = [
         "id": 575265,
         "title": "Mission: Impossible - The Final Reckoning",
         "overview": "Ethan Hunt and team continue their search for the terrifying AI known as the Entity — which has infiltrated intelligence networks all over the globe — with the world's governments and a mysterious ghost from Hunt's past on their trail. Joined by new allies and armed with the means to shut the Entity down for good, Hunt is in a race against time to prevent the world as we know it from changing forever.",
-        "poster_path": "https://image.tmdb.org/t/p/original/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/1p5aI299YBnqrEEvVGJERk2MXXb.jpg",
+        // "poster_path": "https://image.tmdb.org/t/p/original/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg",
+        "poster_path": missionimpossible,
+        // "backdrop_path": "https://image.tmdb.org/t/p/original/1p5aI299YBnqrEEvVGJERk2MXXb.jpg",
+        "backdrop_path": missionimpossible,
         "genres": [
             { "id": 28, "name": "Action" },
             { "id": 12, "name": "Adventure" },
@@ -196,8 +208,32 @@ export const dummyShowsData = [
         "id": 986056,
         "title": "Thunderbolts*",
         "overview": "After finding themselves ensnared in a death trap, seven disillusioned castoffs must embark on a dangerous mission that will force them to confront the darkest corners of their pasts.",
-        "poster_path": "https://image.tmdb.org/t/p/original/m9EtP1Yrzv6v7dMaC9mRaGhd1um.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
+        // "poster_path": "https://image.tmdb.org/t/p/original/m9EtP1Yrzv6v7dMaC9mRaGhd1um.jpg",
+        "poster_path": thunderbolts,
+        // "backdrop_path": "https://image.tmdb.org/t/p/original/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
+        "backdrop_path": thunderbolts,
+        "genres": [
+            { "id": 28, "name": "Action" },
+            { "id": 878, "name": "Science Fiction" },
+            { "id": 12, "name": "Adventure" }
+        ],
+        "casts": dummyCastsData,
+        "release_date": "2025-04-30",
+        "original_language": "en",
+        "tagline": "Everyone deserves a second shot.",
+        "vote_average": 7.443,
+        "vote_count": 2359,
+        "runtime": 127,
+    },
+    {
+        "_id": "986057",
+        "id": 986057,
+        "title": "The Raja Sab*",
+        "overview": "After finding themselves ensnared in a death trap, seven disillusioned castoffs must embark on a dangerous mission that will force them to confront the darkest corners of their pasts.",
+        // "poster_path": "https://image.tmdb.org/t/p/original/m9EtP1Yrzv6v7dMaC9mRaGhd1um.jpg",
+        "poster_path": therajasaab,
+        // "backdrop_path": "https://image.tmdb.org/t/p/original/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
+        "backdrop_path":   therajasaab,
         "genres": [
             { "id": 28, "name": "Action" },
             { "id": 878, "name": "Science Fiction" },
