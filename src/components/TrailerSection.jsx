@@ -1,78 +1,61 @@
-// import React from 'react'
-// import { useState } from 'react';
-// import { dummyTrailers } from '../assets/assets';
-// import ReactPlayer from 'react-player';
-// import BlurCircle from './BlurCircle';
-// import { PlayCircleIcon } from 'lucide-react';
-
-// const TrailerSection = () => {
-//     const [currentTrailer, setCurrentTrailer] = useState(dummyTrailers[0]);
-//   return (
-//     <div className='px-6 md:px-16 lg:px-24 xl:px-44 py-20 overflow-hidden'>
-//         <p className='text-gray-300 lg:px-300 font-medium text-lg max-w-[960px] mx-auto'>Trailers</p>
-//       <div className='relative mt-6' >
-//         <BlurCircle top='-100px' right='100px' />
-
-// <ReactPlayer  url={currentTrailer.videoUrl} controls={false} className='mx-auto max-w-full' width="960px" height="540px"  />
-//       </div>
-//       <div className='group grid grid-cols-4 gap-4 md:gap-8 mt-8 max-w-3xl mx-auto'>
-//         {dummyTrailers.map((trailer)=>(
-//             <div key={trailer.image} className='relative group-hover:not-hover:opacity-50 hover:translate-y-1 duration-300 transition max-md:h-60 md:max-h-60 cursor-pointer' onClick={()=>setCurrentTrailer(trailer)}>
-
-//                 <img src={trailer.image} alt="Trailer" className='rounded-lg w-full h-full object-cover brightness-75' />
-                
-//                 <PlayCircleIcon className='absolute top-1/2 left-1/2 w-5 md:w-8 h-5 md:h-12 transform -translate-x-1/2 -translate-y-1/2'/>
-                
-//             </div>
-            
-//         ))}
-
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default TrailerSection
-
-
-import React from 'react'
-import { useState } from 'react';
-import { dummyTrailers } from '../assets/assets';
-import ReactPlayer from 'react-player';
-import BlurCircle from './BlurCircle';
-import { PlayCircleIcon } from 'lucide-react';
+import React, { useState } from 'react'
+import ReactPlayer from 'react-player'
+import { PlayCircleIcon } from 'lucide-react'
+import BlurCircle from './BlurCircle'
+import { dummyTrailers } from '../assets/assets'
 
 const TrailerSection = () => {
-    const [currentTrailer, setCurrentTrailer] = useState(dummyTrailers[0]);
-  return (
-    <div className='px-6 md:px-16 lg:px-24 xl:px-44 py-20 overflow-hidden'>
-        <p className='text-gray-300 lg:px-300 font-medium text-lg max-w-[960px] mx-auto'>Trailers</p>
-      <div className='relative mt-6' >
-        <BlurCircle top='-100px' right='100px' />
+  const [currentTrailer, setCurrentTrailer] = useState(dummyTrailers[0])
 
-        <ReactPlayer  
-          url={currentTrailer.videoUrl} 
-          controls={false} 
-          className='mx-auto max-w-full' 
-          width="960px" 
-          height="540px"  
+  return (
+    <div className="px-6 md:px-16 lg:px-24 xl:px-44 py-20 overflow-hidden">
+      {/* Title */}
+      <p className="text-gray-300 font-medium text-lg max-w-[960px] mx-auto">
+        Trailers
+      </p>
+
+      {/* Player */}
+      <div className="relative mt-6 max-w-[960px] mx-auto">
+        <BlurCircle top="-100px" right="100px" />
+
+        <ReactPlayer
+          url={currentTrailer.videoUrl}
+          controls={false}
+          width="100%"
+          height="540px"
+          className="rounded-lg overflow-hidden"
         />
       </div>
-      <div className='grid grid-cols-4 gap-4 md:gap-8 mt-8 max-w-3xl mx-auto group'>
-        {dummyTrailers.map((trailer)=>(
-            <div 
-              key={trailer.image} 
-              className='relative opacity-100 group-hover:opacity-50 hover:!opacity-100 hover:-translate-y-1 duration-300 transition max-md:h-60 md:h-60 cursor-pointer' 
-              onClick={()=>setCurrentTrailer(trailer)}
-            >
-                <img 
-                  src={trailer.image} 
-                  alt="Trailer" 
-                  className='rounded-lg w-full h-full object-cover brightness-75' 
-                />
-                
-                <PlayCircleIcon className='absolute top-1/2 left-1/2 w-8 h-8 md:w-12 md:h-12 transform -translate-x-1/2 -translate-y-1/2 text-white'/>
-            </div>
+
+      {/* Thumbnails */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-8 mt-8 max-w-3xl mx-auto group">
+        {dummyTrailers.map((trailer) => (
+          <div
+            key={trailer.image}
+            onClick={() => setCurrentTrailer(trailer)}
+            className="
+              relative cursor-pointer overflow-hidden rounded-lg
+              transition duration-300
+              md:h-60
+              group-hover:[&:not(:hover)]:opacity-50
+              hover:-translate-y-1 hover:scale-[1.03]
+            "
+          >
+            <img
+              src={trailer.image}
+              alt="Trailer"
+              className="w-full h-full object-cover brightness-75"
+            />
+
+            <PlayCircleIcon
+              className="
+                absolute top-1/2 left-1/2
+                w-8 h-8 md:w-12 md:h-12
+                -translate-x-1/2 -translate-y-1/2
+                text-white
+              "
+            />
+          </div>
         ))}
       </div>
     </div>
@@ -80,5 +63,3 @@ const TrailerSection = () => {
 }
 
 export default TrailerSection
-
-

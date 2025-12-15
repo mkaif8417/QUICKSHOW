@@ -9,6 +9,8 @@ import MyBookings from './pages/MyBookings'
 import Favorite from './pages/Favorite'
 import { Toaster } from 'react-hot-toast'
 import Footer from './components/Footer'
+import Payment from './pages/Payment'
+import PaymentSuccess from './pages/PaymentSuccess'
 
 // Admin pages
 import Layout from './pages/admin/Layout'
@@ -35,6 +37,9 @@ const App = () => {
         <Route path='/movies/:id/:date' element={<SeatLayout />} />
         <Route path='/my-bookings' element={<MyBookings />} />
         <Route path='/favorite' element={<Favorite />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path='/payment-success' element={<PaymentSuccess />} />
+
 
         {/* ADMIN ROUTES (NESTED) */}
         <Route path="/admin/*" element={<Layout />}>
