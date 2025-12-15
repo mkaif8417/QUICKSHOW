@@ -38,11 +38,9 @@ const SeatLayout = () => {
     setSelectedSeats(prev => prev.includes(seatId) ? prev.filter(seat => seat !== seatId) : [...prev, seatId])
   }
 
-
-  // bhbjbj
-  const renderSeats = (row, count = 9) => (
-    <div key={row} className="flex gap-2 mt-2">
-      <div className="flex  flex-wrap items-center justify-center gap-2">
+  const renderSeats = (row, count = 8) => (
+    <div key={row} className="flex gap-2 mt-2 cursor-pointer">
+      <div className="flex  flex-wrap items-center justify-center gap-2 cursor-pointer">
         {Array.from({ length: count }, (_, i) => {
           const seatId = `${row}${i + 1}`;
           return (

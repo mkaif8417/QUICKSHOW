@@ -20,3 +20,14 @@ body {
 .no-scrollbar{
   scrollbar-width: none;
 }
+/* Remove arrows from number inputs */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Invert color of datetime-local calendar icon */
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}

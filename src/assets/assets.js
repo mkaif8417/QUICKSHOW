@@ -12,6 +12,11 @@ import andhraking from './andhraking.jpg';
 import missionimpossible from './mission-impossible.jpg';
 import thunderbolts from './thunderbolts.jpg';
 import therajasaab from './the-raja-saab.jpg';
+import pradpit from './prad pit.jpg';
+import karry from './kerry condon.jpg';
+import damson from './damson.jpg';
+import Lewis from './levis.jpg'
+import avatar from './avatar.jpg';
 
 export const assets = {
     logo,
@@ -25,9 +30,14 @@ export const assets = {
     tereishqme,
     dhurandhar,
     andhraking,
+    avatar,
     missionimpossible,
     thunderbolts,
-    therajasaab
+    therajasaab,
+    pradpit,
+    karry,
+    damson,
+    Lewis
 }
 
 export const dummyTrailers = [
@@ -51,10 +61,14 @@ export const dummyTrailers = [
 ]
 
 const dummyCastsData = [
-    { "name": "Milla Jovovich", "profile_path": "https://image.tmdb.org/t/p/original/usWnHCzbADijULREZYSJ0qfM00y.jpg", },
-    { "name": "Dave Bautista", "profile_path": "https://image.tmdb.org/t/p/original/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg", },
-    { "name": "Arly Jover", "profile_path": "https://image.tmdb.org/t/p/original/zmznPrQ9GSZwcOIUT0c3GyETwrP.jpg", },
-    { "name": "Amara Okereke", "profile_path": "https://image.tmdb.org/t/p/original/nTSPtzWu6deZTJtWXHUpACVznY4.jpg", },
+    // { "name": "Milla Jovovich", "profile_path": "https://image.tmdb.org/t/p/original/usWnHCzbADijULREZYSJ0qfM00y.jpg", },
+    { "name": "Brad Pitt", "profile_path": pradpit, },
+    // { "name": "Dave Bautista", "profile_path": "https://image.tmdb.org/t/p/original/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg", },
+    { "name": "Kerry condon", "profile_path": karry, },
+    // { "name": "Arly Jover", "profile_path": "https://image.tmdb.org/t/p/original/zmznPrQ9GSZwcOIUT0c3GyETwrP.jpg", },
+    { "name": "Damson Idris", "profile_path": damson, },
+    // { "name": "Amara Okereke", "profile_path": "https://image.tmdb.org/t/p/original/nTSPtzWu6deZTJtWXHUpACVznY4.jpg", },
+    { "name": "Lewis", "profile_path": Lewis, },
     { "name": "Fraser James", "profile_path": "https://image.tmdb.org/t/p/original/mGAPQG2OKTgdKFkp9YpvCSqcbgY.jpg", },
     { "name": "Deirdre Mullins", "profile_path": "https://image.tmdb.org/t/p/original/lJm89neuiVlYISEqNpGZA5kTAnP.jpg", },
     { "name": "Sebastian Stankiewicz", "profile_path": "https://image.tmdb.org/t/p/original/hLN0Ca09KwQOFLZLPIEzgTIbqqg.jpg", },
@@ -105,6 +119,27 @@ export const dummyShowsData = [
         "genres": [
             { "id": 27, "name": "Animated" },
             { "id": 9648, "name": "Drama" }
+        ],
+        "casts": dummyCastsData,
+        "release_date": "2025-04-23",
+        "original_language": "en",
+        "tagline": "Every night a different nightmare.",
+        "vote_average": 9.4,
+        "vote_count": 1800,
+        "runtime": 120,
+    },
+     {
+        "_id": "1232547",
+        "id": 1232547,
+        "title": "Avatar Fire And Ash",
+        "overview": "Aang, the last surviving Airbender and the Avatar, must master Water, Earth, and Fire to restore balance to a world divided by war. The Water Tribe fights to defend their culture, while the Fire Nation seeks to expand its power, leading to a larger conflict that shapes Aang’s journey.",
+        // "poster_path": "https://image.tmdb.org/t/p/original/juA4IWO52Fecx8lhAsxmDgy3M3.jpg",
+        "poster_path": avatar,
+        // "backdrop_path": "https://image.tmdb.org/t/p/original/icFWIk1KfkWLZnugZAJEDauNZ94.jpg",
+        "backdrop_path": avatar,
+        "genres": [
+            { "id": 27, "name": "Animated" },
+            { "id": 9648, "name": "Action" }
         ],
         "casts": dummyCastsData,
         "release_date": "2025-04-23",
@@ -372,7 +407,7 @@ export const dummyBookingData = [
     },
     {
         "_id": "68396334fb83252d82e17295",
-        "user": { "name": "GreatStack", },
+        "user": { "name": "K", },
         "show": {
             _id: "68352363e96d99513e4221a4",
             movie: dummyShowsData[0],
