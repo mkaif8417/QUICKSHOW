@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import BlurCircle from './BlurCircle'
 import { dummyShowsData } from '../assets/assets'
 import MovieCard from './MovieCard'
+import Title from './admin/Title'
 
 const FeaturedSection = () => {
     const navigate = useNavigate()
@@ -11,8 +12,8 @@ const FeaturedSection = () => {
     <div className=' overflow-hidden mx-0.5'>
       {/* px-6 md:px-16 lg:px-44 */}
        <div className='relative flex items-center justify-between pt-20 pb-10'>
-        <BlurCircle top="0" right='-80px'/>
-        <p className='text-gray-300 font-medium text-lg'>Now Showing</p>
+        <BlurCircle top="0" />
+        <p className='text-gray-300 font-medium text-lg'><Title text1="Now"  text2='Showing'/></p>
         <button onClick={()=>navigate('/movies')} className='group flex items-center gap-2 text-sm text-gray-300 cursor-pointer'>View All<ArrowRight className='group-hover:translate-x-0.5 transition-transform w-4 h-4'/></button>
        </div>
        <div className='flex flex-wrap max-sm:justify-center gap-5 mt-8 w-full ' >

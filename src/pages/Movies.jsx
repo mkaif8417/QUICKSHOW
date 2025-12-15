@@ -2,6 +2,7 @@ import React from 'react'
 import {dummyShowsData} from '../assets/assets'
 import MovieCard from '../components/MovieCard'
 import BlurCircle from '../components/BlurCircle'
+import Title from '../components/admin/Title'
 
 const Movies = () => {
   return dummyShowsData.length>0?(
@@ -9,7 +10,8 @@ const Movies = () => {
 
       <BlurCircle top="150px" left="0px" />
       <BlurCircle bottom="50px" right="50px" />
-      <h1 className='text-lg font-medium my-4'>Now Showing</h1>
+      <Title  text1="Now" text2="Showing"/>
+      {/* <h1 className='text-lg font-medium my-4'>Now Showing</h1> */}
       <div className='flex flex-wrap max-sm:justify-center gap-5'>
         {dummyShowsData.map((movie)=>(
           <MovieCard movie={movie} key={movie._id} />
